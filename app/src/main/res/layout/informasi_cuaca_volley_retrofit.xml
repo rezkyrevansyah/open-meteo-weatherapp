@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1.1">
+
+    <TextView
+        android:id="@+id/tvKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Malang"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="22 C"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="430dp"
+        android:layout_height="430dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        app:srcCompat="@drawable/rectangle_rounded2" />
+
+    <ImageView
+        android:id="@+id/iconCuaca"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudy" />
+
+    <TextView
+        android:id="@+id/tvWeathercode"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Berawan"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/tvTemperature"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/tvWindspeed"
+        android:layout_width="113dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvWindDesc"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="113dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvLongitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toEndOf="@+id/tvLatitudeDesc"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/tvLongitudeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Latitude      :"
+        app:layout_constraintBottom_toTopOf="@+id/tvWindDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/tvWindDesc"
+        android:layout_width="89dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Windspeed :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvLatitudeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Longitude   : "
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="113dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvLongitudeDesc"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvRamalanDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Ramalan Cuaca 1 Minggu ke Depan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <ImageView
+        android:id="@+id/ramalan1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvWeathercode1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal1"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/ramalan2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvWeathercode1"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan3"
+        app:layout_constraintStart_toEndOf="@+id/ramalan1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/ramalan3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal3"
+        app:srcCompat="@drawable/cloudy" />
+
+    <TextView
+        android:id="@+id/tvTanggal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="251dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRamalanDesc"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTanggal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal2"
+        app:layout_constraintTop_toBottomOf="@+id/tvRamalanDesc" />
+
+    <TextView
+        android:id="@+id/tvTanggal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal1"
+        app:layout_constraintTop_toBottomOf="@+id/tvRamalanDesc" />
+
+    <TextView
+        android:id="@+id/tvWeathercode1"
+        android:layout_width="82dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeathercode2"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeathercode3"
+        android:layout_width="80dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTanggal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal4"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeathercode1" />
+
+    <TextView
+        android:id="@+id/tvTanggal6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal5"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeathercode1" />
+
+    <ImageView
+        android:id="@+id/ramalan4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvWeathercode4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cloudy" />
+
+    <TextView
+        android:id="@+id/tvTanggal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_light"
+        android:text="0000-00-00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeathercode1" />
+
+    <TextView
+        android:id="@+id/tvWeathercode4"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ramalan5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvWeathercode4"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan6"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/ramalan4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/ramalan6"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal6"
+        app:srcCompat="@drawable/cloudy" />
+
+    <TextView
+        android:id="@+id/tvWeathercode5"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvWeathercode4" />
+
+    <TextView
+        android:id="@+id/tvWeathercode6"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvWeathercode5" />
+
+    <TextView
+        android:id="@+id/tvTanggalSekarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        android:text="0000-00-00"
+        app:layout_constraintBottom_toBottomOf="@+id/iconCuaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKota"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bolditalic"
+        android:text="Library by ..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Back"
+        app:backgroundTint="@color/color_2"
+        app:layout_constraintEnd_toStartOf="@+id/tvKota"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/nunito_lightitalic"
+        android:text="Created by Razzaaq and Rezky"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
